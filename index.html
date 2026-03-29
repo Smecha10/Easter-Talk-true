@@ -2,12 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easter Talk</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="app-container">
+      <header class="app-header">
+        <h1>Easter Sunday Presentation</h1>
+        <p class="subtitle">The Greatest Easter Story Ever Told</p>
+      </header>
+      
+      <main class="app-main" id="talk-content">
+        <!-- Talk sections will be rendered here via JS -->
+      </main>
+
+      <div class="timer-wrapper">
+        <div id="timer-widget" class="timer-widget timer-safe">
+          <div id="timer-display" class="timer-display">15:00</div>
+          <div class="timer-controls">
+            <button id="sub-min" title="Subtract 1 Minute">-1m</button>
+            <button id="toggle-timer" class="primary-btn">Start</button>
+            <button id="reset-timer">Reset</button>
+            <button id="add-min" title="Add 1 Minute">+1m</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="talkData.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

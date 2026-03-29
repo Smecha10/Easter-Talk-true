@@ -70,6 +70,7 @@ body {
   box-shadow: var(--shadow-subtle);
   border: 1px solid rgba(255,255,255,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 2rem;
 }
 
 .talk-section:hover {
@@ -96,7 +97,7 @@ body {
 
 /* Notes and Transitions */
 .reference-note {
-  color: #a371f7;
+  color: #a371f7 !important;
   font-style: italic;
   font-size: 1.05rem !important;
   opacity: 0.9;
@@ -111,7 +112,7 @@ body {
   text-align: center;
   font-style: italic;
   font-size: 1rem;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
   box-shadow: inset 0 0 15px rgba(88, 166, 255, 0.05);
   position: relative;
 }

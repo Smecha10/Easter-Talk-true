@@ -1,4 +1,4 @@
-export const talkData = [
+const talkData = [
   {
     id: 'intro',
     title: 'Summary of Talk: The Greatest Easter Story Ever Told',
